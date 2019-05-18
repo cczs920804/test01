@@ -1,4 +1,4 @@
-package com.forum.config;
+package com.forummall.common.config;
 
 import org.springframework.context.annotation.Configuration;
 
