@@ -3,7 +3,7 @@ package com.forummall.common.entity;
 import java.io.Serializable;
 
 /**用户个人信息*/
-public class user implements Serializable{
+public class User implements Serializable{
 
 	private static final long serialVersionUID = 7203513067217610612L;
 	
@@ -14,20 +14,27 @@ public class user implements Serializable{
 	private Long idCard;
 	private Integer tel;
 	private String email;
-	private String userName;
-	private String passWord;
+	private String username;
+	private String password;
+	private Integer valid=1;
 	
-	public String getUserName() {
-		return userName;
+	public Integer getValid() {
+		return valid;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setValid(Integer valid) {
+		this.valid = valid;
 	}
-	public String getPassWord() {
-		return passWord;
+	public String getUsername() {
+		return username;
 	}
-	public void setPassWord(String passWord) {
-		this.passWord = passWord;
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public Integer getId() {
 		return id;

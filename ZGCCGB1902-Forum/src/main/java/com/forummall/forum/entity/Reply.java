@@ -16,7 +16,7 @@ public class Reply implements Serializable {
 	private Integer forumId; 
 	private int state;
 	private String text;
-	private Date createTime;
+	private Date createdTime;
 	private Integer parentId;
 	
 	public Integer getId() {
@@ -45,10 +45,10 @@ public class Reply implements Serializable {
 		this.state = state;
 	}
 	public Date getCreateTime() {
-		return createTime;
+		return createdTime;
 	}
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
+	public void setCreatedTime(Date createdTime) {
+		this.createdTime = createdTime;
 	}
 	public Integer getParentId() {
 		return parentId;

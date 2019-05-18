@@ -3,7 +3,7 @@ package com.forummall;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-@MapperScan("com.*.dao")
+@MapperScan("com.forummall.**.dao")
 @SpringBootApplication
 public class Zgccgb1902ForumApplication {
 

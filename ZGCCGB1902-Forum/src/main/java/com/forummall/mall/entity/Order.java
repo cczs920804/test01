@@ -15,7 +15,7 @@ public class Order implements Serializable {
 	private Integer userId;
 	private Integer receiptId;
 	private Integer evaluateId;
-	private Date createTime;
+	private Date createdTime;
 	
 	public Integer getId() {
 		return id;
@@ -60,10 +60,10 @@ public class Order implements Serializable {
 	public void setEvaluateId(Integer evaluateId) {
 		this.evaluateId = evaluateId;
 	}
-	public Date getCreateTime() {
-		return createTime;
+	public Date getCreatedTime() {
+		return createdTime;
 	}
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
+	public void setCreatedTime(Date createdTime) {
+		this.createdTime = createdTime;
 	}
 }
