@@ -68,15 +68,14 @@
 		<dependency>
 			<groupId>com.aliyun</groupId>
 			<artifactId>aliyun-java-sdk-core</artifactId>
-			<version>3.7.1</version>
+			<version>3.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.aliyun</groupId>
-			<artifactId>aliyun-java-sdk-dysmsapi</artifactId>
-			<version>1.1.0</version>
+			<artifactId>aliyun-java-sdk-ecs</artifactId>
+			<version>4.11.0</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
