@@ -22,4 +22,12 @@ public interface UserDao {
 	 * @return
 	 */
 	User findUser(String username,Integer tel,String email);
+	
+	/**用户注册*/
+	int insertObject(User user);
+	
+	/**修改用户信息*/
+	int updateObject(User user);
+	
+	
 }

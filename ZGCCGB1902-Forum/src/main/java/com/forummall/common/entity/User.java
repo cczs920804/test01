@@ -17,7 +17,28 @@ public class User implements Serializable{
 	private String username;
 	private String password;
 	private Integer valid=1;
+	private String forumName;
+	private String salt;
+	private int level;
 	
+	public String getSalt() {
+		return salt;
+	}
+	public void setSalt(String salt) {
+		this.salt = salt;
+	}
+	public int getLevel() {
+		return level;
+	}
+	public void setLevel(int level) {
+		this.level = level;
+	}
+	public String getForumName() {
+		return forumName;
+	}
+	public void setForumName(String forumName) {
+		this.forumName = forumName;
+	}
 	public Integer getValid() {
 		return valid;
 	}
