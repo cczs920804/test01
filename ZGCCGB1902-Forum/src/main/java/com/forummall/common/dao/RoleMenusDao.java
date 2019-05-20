@@ -1,5 +1,7 @@
 package com.forummall.common.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface RoleMenusDao {
@@ -24,4 +26,13 @@ public interface RoleMenusDao {
       * @return
       */
 	int deleteObjectsByMenuId(Integer menuId);
+	
+	/**
+	 * 基于多个角色id获取对应的多个菜单id?
+	 * 为什么时候多个角色呢?因为一个用户可以有多个角色
+	 * @param roleIds
+	 * @return
+	 */
+	List<Integer> findMenuIdsByRoleId(
+			@Param("roleId")Integer roleId);
 }

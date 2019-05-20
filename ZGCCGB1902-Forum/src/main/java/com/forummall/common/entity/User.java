@@ -8,18 +8,23 @@ public class User implements Serializable{
 	private static final long serialVersionUID = 7203513067217610612L;
 	
 	private Integer id;
+	//用户实际姓名
 	private String name;
 	private Integer age;
 	private String gender;
 	private Long idCard;
 	private Integer tel;
 	private String email;
+	//用户名（登录账号）
 	private String username;
 	private String password;
-	private Integer valid=1;
-	private String forumName;
 	private String salt;
-	private int level;
+	//用户状态 正常=1 禁言=2 冻结=0
+	private Integer valid=1;
+	//昵称
+	private String forumName;
+	//用户论坛等级
+	private int level=1;
 	
 	public String getSalt() {
 		return salt;

@@ -1,7 +1,5 @@
 package com.forummall.common.dao;
 
-import java.util.List;
-
 import org.apache.ibatis.annotations.Param;
 
 public interface UserRoleDao {
@@ -11,7 +9,7 @@ public interface UserRoleDao {
 	 * @param id
 	 * @return
 	 */
-	List<Integer> findRoleIdsByUserId(Integer id);
+	Integer findRoleIdsByUserId(Integer id);
 	
 	int insertObjects(
 			@Param("userId")Integer userId,

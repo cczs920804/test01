@@ -8,7 +8,7 @@ public class UserRoles implements Serializable {
 	private static final long serialVersionUID = 5128439830309040052L;
 	private Integer id;
 	private Integer rolesId;
-	private Integer forumId;
+	private Integer userId;
 	
 	public Integer getId() {
 		return id;
@@ -22,10 +22,10 @@ public class UserRoles implements Serializable {
 	public void setRolesId(Integer rolesId) {
 		this.rolesId = rolesId;
 	}
-	public Integer getForumId() {
-		return forumId;
+	public Integer getUserId() {
+		return userId;
 	}
-	public void setForumId(Integer forumId) {
-		this.forumId = forumId;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 }

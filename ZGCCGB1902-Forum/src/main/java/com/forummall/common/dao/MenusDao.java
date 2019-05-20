@@ -18,13 +18,13 @@ public interface MenusDao {
 			@Param("menuIds")
 			Integer[] menuIds);
 	/**
-	 * 将内存中的SysMenu对象持久化到数据库
+	 * 将内存中的Menu对象持久化到数据库
 	 * @param entity
 	 * @return 更新记录的行数
 	 */
 	int updateObject(Menus entity);
 	/**
-	 * 将内存中的SysMenu对象持久化到数据库
+	 * 将内存中的Menu对象持久化到数据库
 	 * @param entity
 	 * @return 写入记录的行数
 	 */

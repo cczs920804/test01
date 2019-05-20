@@ -26,6 +26,12 @@ public interface RoleDao {
 			@Param("name")String name,
 			@Param("startIndex")Integer startIndex,
 			@Param("pageSize")Integer pageSize);
+/**
+	 * 基于角色id查找角色相关信息
+	 * @param id
+	 * @return
+	 */
+	RoleMenus findObjectById(Integer id);
 
 	/**
 	 * 将角色自身信息写入到数据库
@@ -38,16 +44,16 @@ public interface RoleDao {
 	List<CheckBox> findObjects();
 
 	/**
-	 * 基于角色id查找角色相关信息
-	 * @param id
-	 * @return
-	 */
-	RoleMenus findObjectById(Integer id);
-
-	/**
 	 * 将角色自身信息更新到数据库
 	 * @param entity
 	 * @return
 	 */
 	int updateObject(Role entity);
+	
+	 /**
+	  * 基于角色id删除角色自身信息
+	  * @param id
+	  * @return
+	  */
+	 int deleteObject(Integer id);
 }
